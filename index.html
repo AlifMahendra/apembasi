@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+<body class="overflow-x-hidden">
+  <section class="w-full bg-white">
+    <!-- start nav bar here -->
+    <div class="w-full flex py-4 px-4 justify-between container mx-auto">
+      <a href="page/account.php" id="btn-open" class="text-orange-500 text-3xl">
+        <ion-icon name="person"></ion-icon>
+      </a>
+      <a href="cart.html" id="btn-cart" class="text-orange-500 text-3xl">
+        <ion-icon name="cart"></ion-icon>
+      </a>
+    </div>
+    <!-- end nav bar -->
+
+    <!-- hero section start -->
+    <div class="w-full bg-orange-400 bg-contain text-white" >
+      <div class="max-w-lg mx-auto px-4 py-4 flex flex-col w-full">
+        <h1 class="font-bold text-3xl">Halo, Pembeli</h1>
+        <p class="pt-5">silahkan cari menu anda di sini</p>
+        <form action="system/cari.php" class="flex flex-col" method="post">
+          <input type="text" name="cari" id="" placeholder="Cari Menu anda" class="p-2 rounded-md bg-orange-100 border border-black">
+        </form>
+        <div class="w-full flex justify-between py-2">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex text-2xl border border-black shadow-md items-center justify-center bg-orange-100 rounded"><ion-icon class="text-black" name="basket"></ion-icon></div>
+            <p class="text-sm">semua</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex text-2xl border border-black shadow-md items-center justify-center bg-orange-100 rounded"><ion-icon class="text-black" name="pizza"></ion-icon></div>
+            <p class="text-sm">makanan</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex text-2xl border border-black shadow-md items-center justify-center bg-orange-100 rounded"><ion-icon class="text-black" name="beer"></ion-icon></div>
+            <p class="text-sm">minuman</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex text-2xl border border-black shadow-md items-center justify-center bg-orange-100 rounded"><ion-icon class="text-black" name="ice-cream"></ion-icon></div>
+            <p class="text-sm">cemilan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- menu start here -->
+    <div class="container flex flex-col w-full mx-auto px-2 py-4">
+      <h1 class="font-bold text-3xl px-2">Menu Kantin</h1>
+      <div class="flex flex-wrap w-full py-4" id="content">
+        <div class="flex h-64 w-full sm:w-1/3 items-center justify-center p-2 md:w-1/4 lg:w-1/5 produk">
+          <div class="flex h-full w-full flex-col items-stretch overflow-hidden rounded-md border border-black bg-orange-400/50 shadow-md">
+            <div class="flex h-4/6 w-full items-center justify-center overflow-hidden">
+              <img src="../aset/produk/es teh.jpg" class="overflow-hidden object-cover h-full w-full"alt="" />
+            </div>
+            <div class="flex h-2/6 w-full flex-col justify-center border-t border-t-black px-4 pb-1">
+              <p class="text-sm font-semibold text-gray-800">Es Teh</p>
+              <p class="text-xl font-bold">Rp3000,00</p>
+              <p class="text-xs text-gray-800">Kantin Pojok</p>
+            </div>
+          </div>
+        </div>          
+        <div class="flex h-64 w-full sm:w-1/3 items-center justify-center p-2 md:w-1/4 lg:w-1/5 produk">
+          <div class="flex h-full w-full flex-col items-stretch overflow-hidden rounded-md border border-black bg-orange-400/50 shadow-md">
+            <div class="flex h-4/6 w-full items-center justify-center overflow-hidden">
+              <img src="../aset/produk/nasgor.jpg" class="overflow-hidden object-cover h-full w-full"alt="" />
+            </div>
+            <div class="flex h-2/6 w-full flex-col justify-center border-t border-t-black px-4 pb-1">
+              <p class="text-sm font-semibold text-gray-800">Nasi Goreng</p>
+              <p class="text-xl font-bold">Rp6000,00</p>
+              <p class="text-xs text-gray-800">Kantin Mami Rahayu</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex h-64 w-full sm:w-1/3 items-center justify-center p-2 md:w-1/4 lg:w-1/5 produk">
+          <div class="flex h-full w-full flex-col items-stretch overflow-hidden rounded-md border border-black bg-orange-400/50 shadow-md">
+            <div class="flex h-4/6 w-full items-center justify-center overflow-hidden">
+              <img src="../aset/produk/indomie.jpg" class="overflow-hidden object-cover h-full w-full"alt="" />
+            </div>
+            <div class="flex h-2/6 w-full flex-col justify-center border-t border-t-black px-4 pb-1">
+              <p class="text-sm font-semibold text-gray-800">Indomie</p>
+              <p class="text-xl font-bold">Rp6000,00</p>
+              <p class="text-xs text-gray-800">Kantin Mami Rahayu</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex h-64 w-full sm:w-1/3 items-center justify-center p-2 md:w-1/4 lg:w-1/5 produk">
+          <div class="flex h-full w-full flex-col items-stretch overflow-hidden rounded-md border border-black bg-orange-400/50 shadow-md">
+            <div class="flex h-4/6 w-full items-center justify-center overflow-hidden">
+              <img src="../aset/produk/tela tela.jpg" class="overflow-hidden object-cover h-full w-full"alt="" />
+            </div>
+            <div class="flex h-2/6 w-full flex-col justify-center border-t border-t-black px-4 pb-1">
+              <p class="text-sm font-semibold text-gray-800">Tela Tela Goreng</p>
+              <p class="text-xl font-bold">Rp5000,00</p>
+              <p class="text-xs text-gray-800">Kantin Mami Rahayu</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex h-64 w-full sm:w-1/3 items-center justify-center p-2 md:w-1/4 lg:w-1/5 produk">
+          <div class="flex h-full w-full flex-col items-stretch overflow-hidden rounded-md border border-black bg-orange-400/50 shadow-md">
+            <div class="flex h-4/6 w-full items-center justify-center overflow-hidden">
+              <img src="../aset/produk/pop es.jpg" class="overflow-hidden object-cover h-full w-full"alt="" />
+            </div>
+            <div class="flex h-2/6 w-full flex-col justify-center border-t border-t-black px-4 pb-1">
+              <p class="text-sm font-semibold text-gray-800">Pop Ice</p>
+              <p class="text-xl font-bold">Rp3000,00</p>
+              <p class="text-xs text-gray-800">Kantin Tengah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menu end here -->
+  </section>
+  <div id="alertBox" class="w-full fixed bottom-0 p-4 -left-full flex items-center duration-500 justify-end bg-transparent">
+    <div class="border border-black w-full p-2 rounded-md bg-orange-100 text-xs">menu telah masuk di keranjang</div>
+  </div>
+  <!-- link cdn -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script>
+    const produk = document.querySelectorAll(".produk");
+    const alertBox = document.getElementById("alertBox");
+    produk.forEach(e => {
+      e.addEventListener("click", function () {
+          alertBox.classList.toggle("-left-full");
+          alertBox.classList.toggle("left-0");
+        setTimeout(() => {
+          alertBox.classList.toggle("-left-full");
+          alertBox.classList.toggle("left-0");
+        }, 1000);
+      })
+    });
+  </script>
+</body>
+</html>
